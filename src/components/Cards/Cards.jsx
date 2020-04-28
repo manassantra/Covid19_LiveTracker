@@ -6,14 +6,18 @@ import cx from 'classnames';
 
 const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
     if (!confirmed) {
-        return 'Loading...Please wait...';
+        return (
+            <div className={styles.container}>
+                
+            </div>
+        );
     }
     return (
         <div className={styles.container} >
             <Grid container spacing={2} justify="center">
                 <Grid item component = {Card} xs={12} md={3} className={cx(styles.card , styles.infected)}>
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Infected</Typography>
+                        <Typography className={styles.t1} gutterBottom>Infected</Typography>
                         <Typography variant="h4">
                             <CountUp start={0} end={confirmed.value} duration={5} separator=","/>
                         </Typography>
@@ -27,7 +31,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
            
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Recovered</Typography>
+                        <Typography className={styles.t2} gutterBottom>Recovered</Typography>
                         <Typography variant="h4">
                             <CountUp start={0} end={recovered.value} duration={5} separator="," />
                         </Typography>
@@ -40,7 +44,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
               
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Deaths</Typography>
+                        <Typography className={styles.t3} gutterBottom>Deaths</Typography>
                         <Typography variant="h4">
                             <CountUp start={0} end={deaths.value} duration={5} separator="," />
                         </Typography>

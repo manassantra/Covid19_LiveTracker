@@ -39,3 +39,15 @@
     )1 100%; */
     text-align: center;
 }
+
+.t1 {
+    color: rgba(0, 0, 255, 0.5);
+    text-transform: uppercase;
+}
+.t2 {
+    color: rgba(0, 255, 0, 0.5);
+    text-transform: uppercase;
+}
+.t3 {
+    color: rgba(255, 0, 0, 0.5);
+}
