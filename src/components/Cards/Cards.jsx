@@ -7,9 +7,9 @@ import cx from 'classnames';
 const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
     if (!confirmed) {
         return (
-            <div className={styles.container}>
-                
-            </div>
+        <Grid container spacing={2} justify="center">
+            <h4 className={styles.t3}>No Internet Connection...</h4>
+        </Grid>
         );
     }
     return (
