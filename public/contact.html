@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Basic -->
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="logo192.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description" content="Web site created using create-react-app" />
+	<link rel="apple-touch-icon" href="logo192.png" />
+	<!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Pogo Slider CSS -->
+	<link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<!-- End Bootstrap-->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+	<!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+	<title>Covid-19 Live Tracker</title>
+</head>
+<body id="contact_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!-- LOADER -->
+    <div id="preloader">
+		<div class="loader">
+			<img src="images/loader.gif" alt="#"/>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="images/COVID19-logo.png"
+						style="height: 70px; width: 200px;" alt="image"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+					aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+					<ul class="navbar-nav">
+						<li><a class="nav-link" href="index.html">Home</a></li>
+						<li><a class="nav-link" href="about.html">Aboutus</a></li>
+						<li><a class="nav-link active" href="contact.html">Contact Us</a></li>
+						<li><a class="nav-link active" style="background:#fff;color:#000;" href="https://covid19responsefund.org/">Help WHO</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- section -->
+	<div id="contact" class="contact-box">
+		<div class="container">
+
+			<div class="col-lg-5 col-sm-5 col-xs-12" style="font-family: Courier, Monaco, monospace;">
+				<div class="center" style="border:2px solid rgba(0, 0, 255, 0.7);">
+					<h4>#<span style="color:rgba(0, 255, 0, 0.8);">S</span>tay<span style="color:rgba(255, 0, 0, 0.8);">H</span>ome
+					</h4>
+					&nbsp;&nbsp;&nbsp;
+					<h4>#<span style="color:rgba(255, 0, 0, 0.8);">S</span>tay<span style="color:rgba(0, 255, 0, 0.8);">S</span>afe
+					</h4>
+				</div>
+			</div>
+
+			<br>
+			
+			<div class="row">
+				
+				<div class="col-lg-7 col-sm-7 col-xs-12">
+				  <div class="contact-block">
+					<form id="contactForm">
+					  <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+								<div class="help-block with-errors"></div>
+							</div>                                 
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+								<div class="help-block with-errors"></div>
+							</div> 
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your number">
+								<div class="help-block with-errors"></div>
+							</div> 
+						</div>
+						<div class="col-md-12">
+							<div class="form-group"> 
+								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="submit-button text-center">
+								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+								<div id="msgSubmit" class="h3 text-center hidden"></div> 
+								<div class="clearfix"></div> 
+							</div>
+						</div>
+					  </div>            
+					</form>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end section -->
+	
+<footer class="footer-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="logo">
+					<a href="index.html"><img src="images/COVID19-logo.png" style="height: 70px; width: 200px; alt="
+							COVID19-logo" /></a>
+				</div>
+			</div>
+			<div class="col-lg-12 white_fonts">
+				<h4 class="text-align">Contact Us</h4>
+			</div>
+			<div class="margin-top_30 col-md-8 offset-md-2 white_fonts">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="full icon text_align_center">
+							<img src="images/social1.png">
+						</div>
+						<div class="full white_fonts text_align_center">
+							<p>Kolkata 59<br>West Bengal<br>India</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="full icon text_align_center">
+							<img src="images/social2.png">
+						</div>
+						<div class="full white_fonts text_align_center">
+							<p>abcdhelthtips@gmail.com<br>efghhelthtips@gmail.com</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="full icon text_align_center">
+							<img src="images/social3.png">
+						</div>
+						<div class="full white_fonts text_align_center">
+							<p>+91-8436489050<br>+91-9851058072</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row white_fonts margin-top_30">
+			<div class="col-lg-12">
+				<div class="full">
+					<div class="center">
+						<ul class="social_icon">
+							<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<div class="footer_bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p class="crp">© HealthTips 2019 & All Rights Reserved.</p>
+				<ul class="bottom_menu">
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+					<li><a href="#">Terms & Privacy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Footer -->
+	
+	<a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script> 
+	<script src="js/slider-index.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+	<script src="js/isotope.min.js"></script>	
+	<script src="js/images-loded.min.js"></script>	
+    <script src="js/custom.js"></script>
+</body>
+</html>
