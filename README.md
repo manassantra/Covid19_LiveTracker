@@ -1,5 +1,5 @@
 ## This is live project
-check url - https://bit.ly/2YRQ8hV
+check url - https://covidlivetracker-d1d04.web.app/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
